@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign up</title>
+    <link href="logo.png" rel="icon"/>
+    <style>
+    *{
+            padding: 0px;
+            outline: 0px;
+            margin: 0px;
+        }
+        .con{
+            height: 100vh;
+            position: relative;
+            background-color:orangered;
+        }
+        .con .title{
+            position: absolute;
+            width: 50%;
+            left: 25%;
+            top: 0px;
+            
+        }
+        .title div {
+            font-size: 80px;
+            text-align: center;
+            color: aliceblue;
+        }
+        .fb img{
+            width: 200px;
+            height: 80px;
+        }
+        .login {
+            margin: auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 40%;
+            height: 10vh;
+            padding-top: 20%;
+            
+        }
+        .login input{
+            width: 200px;
+            height: 30px;
+            border: 4px solid goldenrod;
+            
+        }
+        .login label{
+            font-size: 25px;
+            color: aliceblue;            
+        }
+        .signin{
+            width: 70px;
+            height: 30px;
+            padding-left: 45.7%;
+            padding-top: 5px;
+            
+        }
+        .signin a{
+            color: black;
+            font-size: 20px;
+            background-color:wheat;
+            text-decoration: none;
+            border-radius: 10%;
+        }
+        
+</style>
+</head>
+<body>
+    <div class="con">
+        <div class="title">
+            <div><h1>V India</h1></div>
+            <div class="fb">
+                <img src="fulllogo.png"/>
+            </div>
+        </div>
+        <nav class="login">
+        <label>User name:<input type="text" onblur="fun(this)" required/></label>
+        <label>Password:<input type="password" onkeyup="pwdval(this)" required/></label>
+        <div class="cont">
+            <div>Starts with an upeercase</div>
+            <div>Must contain a lowercase</div>
+            <div>Atleast one digit</div>
+            <div>One special symobl(@#$%&*)</div>
+            <div>Length should be atleast 8 characters</div>
+        </div>
+        </nav>
+        <script>
+            function fun(e)
+            {
+                let re=/^[a-z A-Z]{4,}$/
+                if(re.test(e.value))
+                {
+                    e.style.border="4px solid green";
+                }
+                else {   
+                
+                    e.style.border="4px solid red";
+            }
+        }
+            function pwdval(e)
+            {
+                let divr=document.querySelectorAll(".con div")
+                if(/^[A-Z]/.test(e.value))
+                {
+                    divr[0].style.color="green";
+                }
+                else
+                {
+                    divr[0].style.color="red";
+                }
+                if(/[a-z]/.test(e.value))
+                {
+                    divr[1].style.color="green";
+                }
+                else
+                {
+                    divr[1].style.color="red";
+                }
+                if(/[0-9]/.test(e.value))
+                {
+                    divr[2].style.color="green";
+                }
+                else
+                {
+                    divr[2].style.color="red";
+                }
+                if(/[@#$%&*]/.test(e.value))
+                {
+                    divr[3].style.color="green";
+                }
+                else
+                {
+                    divr[3].style.color="red";
+                }
+                if(e.value.length>=8)
+                {
+                    divr[4].style.color="green";
+                }
+                else
+                {
+                    divr[4].style.color="red";
+                }
+            }
+        
+        </script>
+        <div class="signin">
+            <a href="vindia front page.html" target="_blank">Sign in</a>
+        </div>
+    </div>
+</body>
+</html>
