@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+   
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link href="logo.png" rel="icon"/>
+    <style>
+        
+        *{
+            padding: 0%;
+            /* margin: 0%; */
+            /* outline: 0px; */
+        }
+        .con{
+            width: 100%;
+            height: 100vh;
+        }
+        .nav{
+            position: relative;
+            width: 100%;
+            height: 7vh;
+            background-color:black ;
+            display: flex;
+        }
+        .ico{
+            margin-left: 50px;
+        }
+        .ico img{
+            height: 30px;
+            width: 30px;
+            border-radius: 30%;
+            padding-top: 5px;
+            
+        
+        }
+        .title{
+            padding-left: 25px;
+            padding-top: 10px;
+            color: whitesmoke;
+        }
+        .title2{
+            padding-top: 10px;
+            color: whitesmoke;
+            margin-left: 15px;
+            
+        }
+        .title3 {
+           
+            padding-top: 10px;
+            width: 65%;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        .title3 a{
+            color: whitesmoke;
+            text-decoration: none;
+        }
+        .fo{
+            background-color:whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="ico">
+            <img src="images.jpg"/>
+        </div>
+        <div class="title">info@vindia.org</div>
+        <div class="ico">
+            <img src="telephon-icon.webp"/>
+        </div>
+        <div class="title2">+91 0987456123</div>
+        <div class="title3">
+            <a href="frontpage.html" target="_self">Homepage</a>
+            <a href="" target="_self">Admission</a>
+            <a href="" target="_self">Student Login</a>
+            <a href="" target="_self">Apply Online</a>
+            <a href="vindiaform.html" target="_self">Quick Enquiry</a>
+            <a href="vindiagallery.html" target="_self">Gallery</a>
+        </div>
+    </nav>
+    <!-- <h1 align="center"><i>WELCOME TO VECTOR INDIA</i></h1> -->
+    
+<form class="fo">
+    <fieldset>
+        <legend><h2><mark>Personal Details</mark></h2></legend>
+    <label>Name:<input type="text" required placeholder="enter name"/></label><br/>
+    <br/><label>Ph no:<input type="number" required placeholder="enter no"/></label><br/>
+    <br/><label>Email Id:<input type="email" required placeholder="enter email"/></label><br/>
+    <br/><label>Password:<input type="password" required placeholder="enter password"/></label><br/>
+    <h2> Language Known</h2>
+    <input type="checkbox" value="E"/>English
+    <input type="checkbox" value="H"/>Hindi
+    <input type="checkbox" value="T"/>Telegu
+    <input type="checkbox" value="K"/>Kannada
+    <input type="checkbox" value="B"/>Bengali
+    <h2>Select Gender</h2>
+    <br/><label><input type="radio" value="1" name="Gender"/>Male</label>
+    <label></label><input type="radio" value="0" name="Gender"/>Female</label>
+    <br/><input type="submit" value="save">
+    </fieldset>
+    <fieldset>
+        <legend><h2><mark>Vector India Institute Details</mark></h2></legend>              
+    <br/><h2>1. Your Institute location:</h2>
+    <input type="radio" name="1" value="1"/> Hyderabad
+    <input type="radio" name="1" value="2"/> Bengalore
+    <input type="radio" name="1" value="3"/> Chennai
+    <input type="radio" name="" value="4"/> Delhi
+    <h2>2. Your Batch Number:</h2>
+    <input type="radio" name="2" value="1"/>FSD-1
+    <input type="radio" name="2" value="2"/>FSD-2
+    <input type="radio" name="2" value="3"/>FSD-3
+    <input type="radio" name="2" value="4"/>FSD-4
+    <br/><h2>3. When You Joined Vector?</h2>
+    <input type="date"/>
+    <br/><h2>4. From which time does theory class starts?</h2>
+    <input type="time"/>
+    <br/><h2>5. Marks scored in 1st assesement:</h2>
+    <input type="range" min="0" max="100" value="00"/>
+    <br/><h2>6. Marks scored in 2nd assesement:</h2>
+    <input type="number" min="0" max="100" step="5"/>
+    <br/><h2>7. Submit Your CV:</h2>
+    <input type="file"/><br/>
+</fieldset>
+<fieldset>
+<legend><h2><mark>Educational Details</mark></h2></legend>
+    <h2>8. You are from:</h2>
+    <select>
+        <option value="1">ME</option>
+        <option value="2">CSE</option>
+        <option value="3">IT</option>
+        <option value="4">ECE</option>
+        <option value="5">EEE</option>
+        <option value="6">EIE</option>
+        <option value="7">CIV</option>
+        <option value="8">EE</option>
+        <option value="9">CHEM</option>
+        <option value="10">AS</option>
+    </select>
+    <br/><h2>9. Programming Language Known:</h2>
+    <select multiple>
+        <option value="1">PYTHON</option>
+        <option value="2">JAVA</option>
+        <option value="3">C</option>
+        <option value="4">HTML</option>
+        <option value="5">CSS</option>
+        <select>
+            <br/><h2>10. Matric Passing Year:</h2>
+            <input type="month"/>
+            <br/><h2>11. HS Passing Year:</h2>
+            <input type="month"/>
+            <h2>12. Degree Passing Year:</h2>
+            <input type="month"/>
+    </fieldset>
+    </select>
+    <h2>13. Your Favourite Color:</h2>
+    <input type="color"/>
+    <br/>
+    <br/>
+    <input type="submit" value="submit form"/>&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="reset form"/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h3><i><u>Leave Your Comments:</u></i></h3>
+    <br/><textarea rows="10" cols="50"></textarea>
+</form>
+<footer class="bg-warning text-center text-dark">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class=" form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" />
+                <label class="form-label" for="form5Example21">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+  
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          Vector India was established with a vision to drive enthusiastic freshers by bridging the gap between industry requirements and enhancing their skill set.We always maintained quality, trust, and camaraderie as a trusted ally with over 50,000 alumni, and 650 corporate and Tech organizations. 
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Training Center</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Hyderabad</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Bangalore</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Chennai</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Kolkata</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Courses</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Full Stack Development</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Embedded systems Development</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Automotive Embedded
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">AUTOSAR</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">company</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">About VIndia</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Careers</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Testimonial</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Gallery</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <!-- <h5 class="text-uppercase">Links</h5> -->
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">FAQ's</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Policies</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Blog</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">VIndia.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</body>
+</html>

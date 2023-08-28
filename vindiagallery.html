@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Gallery</title>
+    <link href="logo.png" rel="icon"/>
+    <style>
+.nav{
+            position: relative;
+            width: 100%;
+            height: 7vh;
+            background-color:black ;
+            display: flex;
+        }
+        .ico{
+            margin-left: 50px;
+        }
+        .ico img{
+            height: 30px;
+            width: 30px;
+            border-radius: 30%;
+            padding-top: 5px;
+            
+        
+        }
+        .title{
+            padding-left: 25px;
+            padding-top: 10px;
+            color: whitesmoke;
+        }
+        .title2{
+            padding-top: 10px;
+            color: whitesmoke;
+            margin-left: 15px;
+            
+        }
+        .title3 {
+           
+            padding-top: 10px;
+            width: 65%;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        .title3 a{
+            color: whitesmoke;
+            text-decoration: none;
+        }
+        *{
+            padding: 0px;
+            height: 0px;
+            margin: 0px;
+        }
+        .con{
+            width: 100%;
+            height: 92vh;
+            margin: auto;
+        }
+        div img{
+            width: 100%;
+            height: 100%;
+        }
+        .con{
+            position: relative;
+        }
+        .lt{
+            position: absolute;
+            left: 10px;
+            top: 48%;
+            color:yellow;
+            font-size: 45px;
+
+        }
+        .gt{
+            position: absolute;
+            top: 48%;
+            left: 97%;
+            color:yellow;
+            font-size: 45px;
+        }
+        .circon{
+            position: absolute;
+            width: 50%;
+            left: 40%;
+            bottom: 28px;
+        }
+        .circon .fa-solid{
+            color: red;
+            font-size: 30px;
+        }
+        .circon .fa-regular{
+            color: green;
+            font-size: 25px;
+        }
+    
+       
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="ico">
+            <img src="images.jpg"  />
+        </div>
+        <div class="title">info@vindia.org</div>
+        <div class="ico">
+            <img src="telephon-icon.webp"/>
+        </div>
+        <div class="title2">+91 0987654123</div>
+        <div class="title3">
+            <a href="frontpage.html" target="_self">Homepage</a>
+            <a href="" target="_self">Admission</a>
+            <a href="" target="_self">Student Login</a>
+            <a href="" target="_self">Apply Online</a>
+            <a href="./vindiaform.html" target="_self">Quick Enquiry</a>
+            <a href="vindiagallery.html" target="_self">Gallery</a>
+        </div>
+    </nav>
+    <div class="con">
+        <img src="1.jpg"/>
+        <div class="lt" onclick="dec()"><i class="fa-solid fa-less-than"></i></div>
+        <div class="gt" onclick="fun()"><i class="fa-solid fa-greater-than"></i></div>
+        
+        <div class="circon">
+            <i class="fa-solid fa-circle" onclick="fun1(0)"></i>
+            <i class="fa-regular fa-circle" onclick="fun1(1)"></i>
+            <i class="fa-regular fa-circle" onclick="fun1(2)"></i>
+            <i class="fa-regular fa-circle" onclick="fun1(3)"></i>
+            <i class="fa-regular fa-circle" onclick="fun1(4)"></i>
+            <i class="fa-regular fa-circle" onclick="fun1(5)"></i>
+            <i class="fa-regular fa-circle" onclick="fun1(6)"></i>
+            <i class="fa-regular fa-circle" onclick="fun1(7)"></i>
+            <i class="fa-regular fa-circle" onclick="fun1(8)"></i>
+        </div>
+        </div>
+        
+        <script>
+            let arr=["1.jpg","2.png","3.png","4.jpg","5.png","6.jpg","7.png","8.jpg","9.jpg"]
+            let i=0
+            let cr=document.getElementsByClassName("fa-circle")
+            function fun(){
+                cr[i].className="fa-regular fa-circle"
+                i++
+                if(i>=9)
+                {
+                    i=0
+                }
+                document.getElementsByTagName("img")[2].src=arr[i]
+               
+                cr[i].className="fa-solid fa-circle"
+            }
+            function dec(){
+                cr[i].className="fa-regular fa-circle"
+                i--
+                if(i<0)
+                {
+                    i=8
+                }
+                document.getElementsByTagName("img")[2].src=arr[i]
+                
+                cr[i].className="fa-solid fa-circle"
+            }
+            function fun1(e)
+            {
+                cr[i].className="fa-regular fa-circle"
+                document.getElementsByTagName("img")[2].src=arr[e]
+                i=e
+                
+                cr[i].className="fa-solid fa-circle"
+            }
+            setInterval(fun,2000)
+        </script>
+
+</body>
+</html>

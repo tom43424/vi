@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>V India</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link href="logo.png" rel="icon"/>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            outline: 0px;
+        }
+        .con{
+            width: 100%;
+            height: 122vh;
+            position: relative;
+            margin-bottom: 25%;
+        }
+        .nav{
+            position: relative;
+            width: 100%;
+            height: 7vh;
+            background-color:black ;
+            display: flex;
+        }
+        .ico{
+            margin-left: 50px;
+        }
+        .ico img{
+            height: 30px;
+            width: 30px;
+            border-radius: 30%;
+            padding-top: 5px;
+            
+        
+        }
+        .title{
+            padding-left: 25px;
+            padding-top: 10px;
+            color: whitesmoke;
+        }
+        .title2{
+            padding-top: 10px;
+            color: whitesmoke;
+            margin-left: 15px;
+            
+        }
+        .title3 {
+           
+            padding-top: 10px;
+            width: 65%;
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        .title3 a{
+            color: whitesmoke;
+            text-decoration: none;
+        }
+        .nav2{
+            
+            display: flex;
+            width: 100%;
+            height: 20vh;
+            background-color:orangered;
+        }
+      .nav2 .logo {
+            display: flex;
+            align-items: center;
+            width: 400px;
+            right: 50px;
+            animation: demo 20s infinite;
+        }
+        .nav2 .logo img{
+            height: 50%;
+            width: 80%;
+            border-radius: 8%;
+            padding-left: 25px;
+            
+        }
+       
+        .menu{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 70%;
+            align-items:center;
+            font-size: 20px;
+            font-style:bold ;
+        }
+        
+        .menu a{
+            color: yellow;
+            text-decoration: none;
+            font-style: oblique;
+            font-size: 20px;
+        }
+        .descrip {
+            width: 60%;
+            height: 70vh;
+        }
+        .descrip h1{
+            display: flex;
+            justify-content: space-around;
+            font-size: 70px;
+            font-family:cursive ;
+            color: whitesmoke;
+            padding-top: 40px;
+        
+        }
+        .minides p{
+            font-size: 30px;
+            padding-left: 230px;
+            padding-top: 10px;
+            color: aliceblue;
+            font-style: italic;
+        }
+        .nav3{
+            background-image:url(960x0.jpg) ;
+            background-size:100% 100%;
+            height: 80vh;
+
+        }
+        .con .qlink1 img{
+            height: 30px;
+            width: 30px;
+            position:fixed;
+            right: 40px;
+            top: 250px;
+            border-radius: 50%;
+            z-index: 2;
+        }
+        .qlink2 img{
+            height: 30px;
+            width: 30px;
+            position:fixed;
+            right: 40px;
+            top: 300px;
+            border-radius: 50%;
+            z-index: 2;
+        }
+        .con .qlink3 img{
+            height: 30px;
+            width: 30px;
+            position:fixed;
+            right: 40px;
+            top: 350px;
+            border-radius: 90%;
+            z-index: 2;
+        }
+    
+        .nav4{
+            background-image: url(technology.jpg);
+            background-size: 100% 100%;
+            height: 70vh;
+        }
+        .apply {
+            font-size: 35px;
+            color: yellowgreen;
+            text-align: center;
+            padding-top: 80px;
+        }
+       
+        .nav4 .appnow button{
+            background-color:gray;
+            width: 100px;
+            height: 50px;
+            border-radius: 10px;
+            font-style: italic;
+            font-size: 18px;
+        }
+        .nav4 .appnow{
+            display: flex;
+            justify-content: center;
+            padding-top:50px ;
+        }
+        .coursecard{
+            /* background-color: #66ff33; */
+            background-image: url(tec1.webp);
+            background-size: 100% 100%;
+        }
+        .coursecont{
+            text-align: center;
+        }
+        .col-sm-6{
+            height: 230px;
+        }
+        .card-title{
+            color: orangered;
+            font-weight: 800;
+            font-size: 30px;
+        }
+        .card-text{
+            color: black;
+            font-style: italic;
+        }
+        .btn-primary{
+            color:yellow;
+            background: red;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div class="con">
+      <div class="qlink1">
+          <img src="indeed.png"/>
+      </div>
+      <div class="qlink2">
+          <img src="insta.png"/>
+      </div>
+      <div class="qlink3">
+          <img src="twitter.png"/>
+      </div>
+  <nav class="nav">
+      <div class="ico">
+          <img src="images.jpg"/>
+      </div>
+      <div class="title">info@vindia.org</div>
+      <div class="ico">
+          <img src="telephon-icon.webp"/>
+      </div>
+      <div class="title2">+91 098745612</div>
+      <div class="title3">
+          <a href="" target="_self">Admission</a>
+          <a href="" target="_self">Student Login</a>
+          <a href="" target="_self">Apply Online</a>
+          <a href="vindiaform.html" target="_self">Quick Enquiry</a>
+          <a href="vindiagallery.html" target="_self">Gallery</a>
+      </div>
+  </nav>
+  <nav class="nav2">
+      <div class="logo">
+          <img src="fulllogo.png"/>
+      </div>
+      <div class="menu">
+          <a href="" target="_self">Institute</a>
+          <a href="" target="_self">Embeded System</a>
+          <a href="" target="_self">Full Stack Development</a>
+          <a href="" target="_self">Shrot Term Courses</a>
+          <a href="" target="_self">Corporate</a>
+          <a href="" target="_self">Workshops</a>
+          <a href="" target="_self">Placements</a>
+      </div>
+  </nav>
+  <nav class="nav3">
+     
+      <div class="descrip">
+          <h1>India's Leading</br> Embedded System</br>Training Institute</h1>
+          <div class="minides">
+              <p>Making students industry ready</br>with application-oriented training program!</p>
+          </div>
+      </div>
+      
+      
+  </nav>
+  <nav class="nav4">
+      <div class="apply">
+          Click Here to Apply for Vector Online Scholarship Test
+      </div>
+      <div class="Click">
+          <nav class="appnow">
+              <button>Apply Now</button>
+          </nav>
+      </div>
+  </nav>
+  </div>
+</div>
+
+<div class="coursecard">
+    <div class="coursecont" style="height: 30vh;">
+        <div class="coursecontdesc" >
+        <h1 style="font-size: 60px; color:#ff0066;">Courses We Offer</h1>
+        <p style="font-size: 20px; color:wheat; font-weight: bold;">Access to long & short term courses we offer to enhance your technical knowledge</p>
+    </div>
+    </div>
+<div class="row">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Full Stack Development</h5>
+          <p class="card-text">A comprehensive Full Stack Development Course ( MERN stack ) with theoretical & practical hands-on coding experience.</p>
+          <a href="#" class="btn btn-primary">Apply Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body" > 
+          <h5 class="card-title">Embedded systems Development</h5>
+          <p class="card-text">Embedded systems are evolving at breakneck speed, driving advances in technology and fuelled by lower costs of implementing hardware and software components</p>
+          <a href="#" class="btn btn-primary">Apply Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Automotive Embedded</h5>
+              <p class="card-text">The Automotive industry is one of the major application domains of embedded systems. Automotive embedded systems are the one where electronics take control over the mechanical system.</p>
+              <a href="#" class="btn btn-primary">Apply Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">AUTOSAR</h5>
+              <p class="card-text">It pursues the objective to create and establish an open and standardized software architecture for automotive electronic control units</p>
+              <a href="#" class="btn btn-primary">Apply Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+    <!-- Footer -->
+<footer class="bg-primary text-center text-dark">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class=" form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p style="font-weight: bold;">
+        Vector India was established with a vision to drive enthusiastic freshers by bridging the gap between industry requirements and enhancing their skill set.We always maintained quality, trust, and camaraderie as a trusted ally with over 50,000 alumni, and 650 corporate and Tech organizations. 
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Training Center</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Hyderabad</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Bangalore</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Chennai</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Kolkata</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Courses</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Full Stack Development</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Embedded systems Development</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Automotive Embedded
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">AUTOSAR</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">company</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">About VIndia</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Careers</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Testimonial</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Gallery</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <!-- <h5 class="text-uppercase">Links</h5> -->
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">FAQ's</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Policies</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Blog</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">VIndia.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+  </body>
+</html>
